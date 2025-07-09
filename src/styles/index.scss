@@ -1,3 +1,194 @@
-body {
+$color-primary: #060b35;
+$color-hover: #00acdc;
+$color-title-hover: #34568b;
+$card-width: 200px;
+$gap-x: 46px;
+$gap-y: 48px;
+$padding-vertical: 50px;
+$padding-horizontal: 40px;
+$transition: 300ms;
+$font-family: 'Roboto', sans-serif;
+
+// 🔄 Сброс
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+// 🧍 Базовые стили
+body {
+  font-family: $font-family;
+  background-color: #fff;
+  color: $color-primary;
+}
+
+// 🧭 Header
+.header {
+  padding: 20px 40px;
+
+  &__nav {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      list-style: none;
+      justify-content: center; // Центрирование списка
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $color-primary;
+      transition: color $transition;
+
+      &.is-active {
+        // Добавляем нужные стили для "Apple"
+        position: relative;
+        width: 37px;
+        height: 15px;
+        top: 22px;
+        left: 333px;
+        opacity: 1;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px; // 100% от высоты
+        letter-spacing: 0;
+        text-transform: uppercase;
+        background-color: $color-hover;
+        color: #fff;
+        display: inline-block;
+        padding: 0 4px;
+        text-align: center;
+        border-radius: 2px;
+      }
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+}
+
+// 📦 Catalog
+.catalog {
+  padding: $padding-vertical $padding-horizontal;
+
+  &__grid {
+    display: grid;
+    gap: $gap-y $gap-x;
+    justify-content: center;
+
+    grid-template-columns: 1fr;
+
+    @media (min-width: 488px) {
+      grid-template-columns: repeat(2, $card-width);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, $card-width);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, $card-width);
+    }
+  }
+}
+
+// 💳 Card
+.card {
+  width: $card-width;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  transition: transform $transition;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: color $transition;
+  }
+
+  &__code {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  &__star {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__reviews {
+    font-size: 13px;
+    color: #777;
+    margin-left: 6px;
+  }
+
+  &__price-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  &__price-label {
+    font-size: 14px;
+    color: #000;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  &__btn {
+    background-color: $color-hover;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all $transition;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 2;
+
+    .card__title {
+      color: $color-title-hover;
+    }
+
+    .card__btn {
+      background-color: #fff;
+      color: $color-hover;
+      border: 1px solid $color-hover;
+
+    }
+  }
 }
