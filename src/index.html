@@ -6,18 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Catalog</title>
+    <title>MOYO Catalog</title>
 
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- SCSS подключен через Parcel -->
     <link
       rel="stylesheet"
       href="styles/index.scss"
@@ -25,61 +20,78 @@
   </head>
   <body>
     <header class="header">
+      <a
+        href="#"
+        class="logo"
+      >
+        <img
+          src="./images/logo.png"
+          alt="MOYO Company Logo"
+        />
+      </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a
-              class="header__nav-link is-active"
               href="#"
+              class="header__nav-link is-active"
             >
               Apple
             </a>
           </li>
           <li class="header__nav-item">
             <a
-              class="header__nav-link"
               href="#"
+              class="header__nav-link"
             >
               Samsung
             </a>
           </li>
           <li class="header__nav-item">
             <a
-              class="header__nav-link"
               href="#"
+              class="header__nav-link"
             >
               Smartphones
             </a>
           </li>
           <li class="header__nav-item">
             <a
-              class="header__nav-link"
               href="#"
-              data-qa="nav-hover"
+              class="header__nav-link"
             >
-              Laptops & computers
+              Laptops & Computers
             </a>
           </li>
           <li class="header__nav-item">
             <a
-              class="header__nav-link"
               href="#"
+              class="header__nav-link"
+            >
+              Gadgets
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a
+              href="#"
+              class="header__nav-link"
             >
               Tablets
             </a>
           </li>
           <li class="header__nav-item">
             <a
-              class="header__nav-link"
               href="#"
+              class="header__nav-link"
             >
               Photo
             </a>
           </li>
           <li class="header__nav-item">
             <a
-              class="header__nav-link"
               href="#"
+              class="header__nav-link"
+              data-qa="hover"
             >
               Video
             </a>
@@ -90,7 +102,6 @@
 
     <main class="catalog">
       <div class="catalog__grid">
-        <!-- Карточки (8 штук) -->
         <div
           class="card"
           data-qa="card"
@@ -126,7 +137,7 @@
               class="card__star"
             />
             <img
-            src="images/star.svg"
+              src="images/star.svg"
               alt="star"
               class="card__star"
             />
@@ -144,10 +155,13 @@
             Buy
           </a>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-qa="card"
+        >
           <img
             src="images/imac.jpeg"
-            alt="Product"
+            alt="APPLE iMac 27” Retina"
             class="card__image"
           />
           <h2 class="card__title">
@@ -161,7 +175,7 @@
               class="card__star"
             />
             <img
-            src="images/star-active.svg"
+              src="images/star-active.svg"
               alt="star"
               class="card__star"
             />
@@ -189,15 +203,285 @@
           <a
             href="#"
             class="card__btn"
+            data-qa="card-hover"
+          >
+            Buy
+          </a>
+        </div>
+        <div
+          class="card"
+          data-qa="card"
+        >
+          <img
+            src="images/imac.jpeg"
+            alt="APPLE iMac 27” Retina"
+            class="card__image"
+          />
+          <h2 class="card__title">
+            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
+          </h2>
+          <p class="card__code">Product code: 190584</p>
+          <div class="card__rating">
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star.svg"
+              alt="star"
+              class="card__star"
+            />
+            <span class="card__reviews">Reviews: 5</span>
+          </div>
+          <div class="card__price-box">
+            <span class="card__price-label">Price:</span>
+            <span class="card__price">$2,199</span>
+          </div>
+          <a
+            href="#"
+            class="card__btn"
+            data-qa="card-hover"
+          >
+            Buy
+          </a>
+        </div>
+        <div
+          class="card"
+          data-qa="card"
+        >
+          <img
+            src="images/imac.jpeg"
+            alt="APPLE iMac 27” Retina"
+            class="card__image"
+          />
+          <h2 class="card__title">
+            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
+          </h2>
+          <p class="card__code">Product code: 190584</p>
+          <div class="card__rating">
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star.svg"
+              alt="star"
+              class="card__star"
+            />
+            <span class="card__reviews">Reviews: 5</span>
+          </div>
+          <div class="card__price-box">
+            <span class="card__price-label">Price:</span>
+            <span class="card__price">$2,199</span>
+          </div>
+          <a
+            href="#"
+            class="card__btn"
+            data-qa="card-hover"
+          >
+            Buy
+          </a>
+        </div>
+        <div
+          class="card"
+          data-qa="card"
+        >
+          <img
+            src="images/imac.jpeg"
+            alt="APPLE iMac 27” Retina"
+            class="card__image"
+          />
+          <h2 class="card__title">
+            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
+          </h2>
+          <p class="card__code">Product code: 190584</p>
+          <div class="card__rating">
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star.svg"
+              alt="star"
+              class="card__star"
+            />
+            <span class="card__reviews">Reviews: 5</span>
+          </div>
+          <div class="card__price-box">
+            <span class="card__price-label">Price:</span>
+            <span class="card__price">$2,199</span>
+          </div>
+          <a
+            href="#"
+            class="card__btn"
+            data-qa="card-hover"
+          >
+            Buy
+          </a>
+        </div>
+        <div
+          class="card"
+          data-qa="card"
+        >
+          <img
+            src="images/imac.jpeg"
+            alt="APPLE iMac 27” Retina"
+            class="card__image"
+          />
+          <h2 class="card__title">
+            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
+          </h2>
+          <p class="card__code">Product code: 190584</p>
+          <div class="card__rating">
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star.svg"
+              alt="star"
+              class="card__star"
+            />
+            <span class="card__reviews">Reviews: 5</span>
+          </div>
+          <div class="card__price-box">
+            <span class="card__price-label">Price:</span>
+            <span class="card__price">$2,199</span>
+          </div>
+          <a
+            href="#"
+            class="card__btn"
+            data-qa="card-hover"
+          >
+            Buy
+          </a>
+        </div>
+        <div
+          class="card"
+          data-qa="card"
+        >
+          <img
+            src="images/imac.jpeg"
+            alt="APPLE iMac 27” Retina"
+            class="card__image"
+          />
+          <h2 class="card__title">
+            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
+          </h2>
+          <p class="card__code">Product code: 190584</p>
+          <div class="card__rating">
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star-active.svg"
+              alt="star"
+              class="card__star"
+            />
+            <img
+              src="images/star.svg"
+              alt="star"
+              class="card__star"
+            />
+            <span class="card__reviews">Reviews: 5</span>
+          </div>
+          <div class="card__price-box">
+            <span class="card__price-label">Price:</span>
+            <span class="card__price">$2,199</span>
+          </div>
+          <a
+            href="#"
+            class="card__btn"
+            data-qa="card-hover"
           >
             Buy
           </a>
         </div>
 
-        <div class="card">
+        <!-- Повтори ещё 7 раз карточку (или могу сделать за тебя) -->
+        <div
+          class="card"
+          data-qa="card"
+        >
           <img
             src="images/imac.jpeg"
-            alt="Product"
+            alt="APPLE iMac 27” Retina"
             class="card__image"
           />
           <h2 class="card__title">
@@ -239,256 +523,13 @@
           <a
             href="#"
             class="card__btn"
+            data-qa="card-hover"
           >
             Buy
           </a>
         </div>
-        <div class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="Product"
-            class="card__image"
-          />
-          <h2 class="card__title">
-            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
-          </h2>
-          <p class="card__code">Product code: 190584</p>
-          <div class="card__rating">
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star.svg"
-              alt="star"
-              class="card__star"
-            />
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-          <div class="card__price-box">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-          <a
-            href="#"
-            class="card__btn"
-          >
-            Buy
-          </a>
-        </div>
-        <!-- Вторая строка из 4 карточек -->
-        <div class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="Product"
-            class="card__image"
-          />
-          <h2 class="card__title">
-            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
-          </h2>
-          <p class="card__code">Product code: 190584</p>
-          <div class="card__rating">
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star.svg"
-              alt="star"
-              class="card__star"
-            />
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-          <div class="card__price-box">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-          <a
-            href="#"
-            class="card__btn"
-          >
-            Buy
-          </a>
-        </div>
-        <div class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="Product"
-            class="card__image"
-          />
-          <h2 class="card__title">
-            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
-          </h2>
-          <p class="card__code">Product code: 190584</p>
-          <div class="card__rating">
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star.svg"
-              alt="star"
-              class="card__star"
-            />
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-          <div class="card__price-box">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-          <a
-            href="#"
-            class="card__btn"
-          >
-            Buy
-          </a>
-        </div>
-        <div class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="Product"
-            class="card__image"
-          />
-          <h2 class="card__title">
-            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
-          </h2>
-          <p class="card__code">Product code: 190584</p>
-          <div class="card__rating">
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star.svg"
-              alt="star"
-              class="card__star"
-            />
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-          <div class="card__price-box">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-          <a
-            href="#"
-            class="card__btn"
-          >
-            Buy
-          </a>
-        </div>
-        <div class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="Product"
-            class="card__image"
-          />
-          <h2 class="card__title">
-            APPLE iMac 27” Retina 5K Monoblock (MNED2UA/A)
-          </h2>
-          <p class="card__code">Product code: 190584</p>
-          <div class="card__rating">
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star-active.svg"
-              alt="star"
-              class="card__star"
-            />
-            <img
-              src="images/star.svg"
-              alt="star"
-              class="card__star"
-            />
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-          <div class="card__price-box">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-          <a
-            href="#"
-            class="card__btn"
-          >
-            Buy
-          </a>
-        </div>
+
+        <!-- ... ещё 6 карточек -->
       </div>
     </main>
   </body>
